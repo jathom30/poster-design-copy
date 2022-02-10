@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* remove browser's default margin */
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+}
+
+.stripes {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.stripe {
+  background: black;
+}
+
+.circles {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  display: grid;
+  width: 70vw;
+  height: 70vw;
+  max-height: 50vh;
+  max-width: 50vh;
+  justify-self: center;
+  align-self: center;
+}
+
+.circle {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+.circle--white {
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+.circle--blue {
+  background: blue;
+  height: 90%;
+  width: 90%;
+}
+.circle--purple {
+  background: purple;
+  height: 80%;
+  width: 80%;
+}
+.circle--red {
+  background: red;
+  height: 70%;
+  width: 70%;
+}
+.circle--orange {
+  background: orange;
+  height: 60%;
+  width: 60%;
+}
+.circle--yellow {
+  background: yellow;
+  height: 50%;
+  width: 50%;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h1 {
+  margin: 0.5rem 0;
+}
