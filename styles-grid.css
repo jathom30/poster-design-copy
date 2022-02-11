@@ -83,6 +83,7 @@ body {
 .title {
   display: flex;
   justify-content: space-between;
+  font-family: sans-serif;
 }
 
 .title h1 {
